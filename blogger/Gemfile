@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Dependent on ImageMagick; brew install imagemagick
 gem 'paperclip'
 
+# use Sorcery for authentication
+gem 'sorcery'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

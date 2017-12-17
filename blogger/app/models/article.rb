@@ -1,9 +1,8 @@
 class Article < ApplicationRecord
+	belongs_to :author # IMPLEMENT EXPLICIT OWNERSHIP OF ARTICLES, ALLOW ONLY OWNER TO EDIT ARTICLE
 	has_many :comments
-
 	has_many :taggings
 	has_many :tags, through: :taggings
-
 	has_many :images
 	# MAY NEED TO FIX LATER--WANT TO BE ABLE TO ATTACH MULTIPLE ATTACHMENTS
 	has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }

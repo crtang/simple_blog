@@ -34,6 +34,10 @@ caption, th, td {
 	vertical-align: middle;
 }
 
+th, td {
+	margin-left: 3px;
+}
+
 q, blockquote {
 	quotes: "" "";
 }
