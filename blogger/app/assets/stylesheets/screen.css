@@ -46,6 +46,10 @@ a img {
 	border: none;
 }
 
+/*img {
+	width: 100%;
+}*/
+
 .fancy-button-reset-base-class, input[type=submit] {
 	font-family: "Lucida Grande", Lucida,Arial, sans-serif;
 	background: url('/images/button_bg.png?1301401396') repeat-x bottom left;

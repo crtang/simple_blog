@@ -9,6 +9,17 @@
 
 <br />
 
+<p>
+	<!-- FIX LATER -->
+	<% if @article.image.exists? %>
+		<%= image_tag @article.image.url(:medium) %>
+	<% elsif @article.image.exists? %>
+		<%= image_tag @article.image.url %>
+	<% end %>
+</p>
+
+<br />
+
 <p><%= @article.body %></p>
 
 <br />
