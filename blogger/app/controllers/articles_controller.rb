@@ -7,6 +7,10 @@ class ArticlesController < ApplicationController
 
 	def show
 		@article = Article.find(params[:id])
+
+		# Not using @comment = @article.comments.new because it'll add a blank comment
+		@comment = Comment.new
+		@comment.article_id = @article.id
 	end
 
 	def new
